@@ -1,0 +1,128 @@
+.container {
+    max-width: 900px;
+    display: block;
+    margin: auto;
+
+    .input-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .input-title {
+            width: 40%;
+            background: white;
+            border: 1px solid #183059;
+            box-sizing: border-box;
+            border-radius: 4px;
+            padding: 12px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            color: gray;
+            outline: none;
+        }
+
+        .input-content {
+            width: 40%;
+            border: 1px solid #183059;
+            border-radius: 4px;
+            box-sizing: border-box;
+            padding: 12px;
+            min-height: 200px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: gray;
+            outline: none;
+        }
+
+        .save-btn {
+            padding: 12px 50px;
+            border-radius: 4px;
+            background: white;
+            border: 2px solid #183059;
+            color: #183059;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            outline: none;
+            cursor: pointer;
+
+            &.cancel {
+                border: 2px solid #F03A47;
+                color: #F03A47;
+            }
+        }
+
+        .action-wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+        }
+    }
+
+    .todo-text {
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+
+    .card-content {
+        border: 0.5px solid rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        padding: 16px;
+        box-shadow: 4px 3px 9px rgba(0, 0, 0, 0.1);
+        margin-bottom: 16px;
+        margin-top: 20px;
+        transition: all ease 0.2s;
+        position: relative;
+        background: #F6F4F3;
+
+        &:hover {
+            cursor: pointer;
+            transform: translateY(-4px);
+            background: #276FBF;
+
+            p {
+                color: white;
+            }
+        }
+
+        p {
+            margin: 0px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .date {
+            font-size: 12px;
+        }
+
+        .content {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .delete-btn {
+            width: 30px;
+            height: 30px;
+            background: #F03A47;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            top: -15px;
+            right: -15px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
